@@ -22,7 +22,7 @@ body {
   justify-content: space-between;
 }
 
-#chat_container {
+#chat-container {
   flex: 1;
   width: 100%;
   height: 100%;
@@ -40,7 +40,7 @@ body {
 }
 
 /* hides scrollbar */
-#chat_container::-webkit-scrollbar {
+#chat-container::-webkit-scrollbar {
   display: none;
 }
 
@@ -49,7 +49,7 @@ body {
   padding: 15px;
 }
 
-.ai {
+.bot {
   background: #40414F;
 }
 
@@ -76,7 +76,7 @@ body {
   align-items: center;
 }
 
-.ai .profile {
+.bot .profile {
   background: #10a37f;
 }
 
@@ -86,7 +86,7 @@ body {
   object-fit: contain;
 }
 
-.message {
+.answer {
   flex: 1;
 
   color: #dcdcdc;
@@ -108,7 +108,7 @@ body {
 }
 
 /* hides scrollbar */
-.message::-webkit-scrollbar {
+.answer::-webkit-scrollbar {
   display: none;
 }
 
