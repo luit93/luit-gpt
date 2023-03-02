@@ -78,7 +78,7 @@ const handleOnSubmit= async (e)=>{
     loader(answerDiv)
 
     //fetch data/answer from server
-    const response = await fetch('http://localhost:6001', {
+    const response = await fetch('https://luitgpt.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
