@@ -8,13 +8,13 @@
 }
 
 body {
-  background: #8a93f4;
+  background: #ec3211;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #d9c88b;
+  background: #06114e;
 
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@ body {
   height: 36px;
   border-radius: 5px;
 
-  background: #5436DA;
+  background: #10a37f;
 
   display: flex;
   justify-content: center;
@@ -117,7 +117,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414F;
+  background: #235f91;
 
   display: flex;
   flex-direction: row;
