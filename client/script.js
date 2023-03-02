@@ -77,7 +77,29 @@ const handleOnSubmit= async (e)=>{
 
     loader(answerDiv)
 
+    //fetch data/answer from server
+    const response = await fetch('http://localhost:6001', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            prompt: data.get('prompt')
+        })
+    })
+    clearInterval(loadDots);
+    answerDiv.innerHTML = '';
 
+    if(response.ok){
+        //answer from backend
+        const answer = await response.json();
+        const parsedAnswer = answer.bot.trim()
+        typer(answerDiv,parsedAnswer)
+    } else{
+        const error= await response.text();
+        answerDiv.innerHTML = "Something went wrong"
+        alert(error)
+    }
 }
 
 form.addEventListener('submit', handleOnSubmit)
